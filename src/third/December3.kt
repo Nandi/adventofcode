@@ -5,6 +5,8 @@ import java.nio.file.Paths
 import java.util.*
 
 /**
+ * todo: visualize
+ *
  * 3.December challenge from www.adventofcode.com
  *
  * Santa is delivering presents to an infinite two-dimensional grid of houses.

@@ -1,6 +1,8 @@
 package first
 
 /**
+ * todo: visualize
+ *
  * 1.December challenge from www.adventofcode.com
  *
  * Santa is trying to deliver presents in a large apartment building, but he can't find the right floor - the
