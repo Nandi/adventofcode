@@ -36,7 +36,7 @@ import kotlin.text.Regex
  * Created by Simon on 07/12/2015.
  */
 class December7 {
-    fun part1() {
+    fun main() {
         val lines = loadFile("src/seventh/7.dec_input.txt")
         for (line in lines) {
             val (input, label) = line.split(" -> ")
@@ -63,7 +63,8 @@ class December7 {
 
         val valueA = nodes["a"]?.getOutput()
 
-        println(valueA)
+        //part 1
+        println("The value of wire a is $valueA")
 
         for (entry in nodes) {
             entry.value.reset()
@@ -71,7 +72,8 @@ class December7 {
 
         nodes["b"] = Node(GATES.NONE, valueA!!, arrayOf());
 
-        println(nodes["a"]!!.getOutput())
+        //part 2
+        println("The value of wire a after wire b value change ${nodes["a"]?.getOutput()}")
     }
 
     fun loadFile(path: String): Stream<String> {
@@ -82,5 +84,5 @@ class December7 {
 }
 
 fun main(args: Array<String>) {
-    December7().part1()
+    December7().main()
 }
