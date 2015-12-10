@@ -1,4 +1,4 @@
-package fifth
+package Day5
 
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -36,7 +36,7 @@ import kotlin.text.Regex
  */
 class December5 {
     fun main() {
-        val lines = loadFile("src/fifth/5.dec_input.txt");
+        val lines = loadFile("src/Day5/5.dec_input.txt");
 
 
         var v1Count = 0;

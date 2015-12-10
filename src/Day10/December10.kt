@@ -1,4 +1,4 @@
-package tenth
+package Day10
 
 /**
  * Today, the Elves are playing a game called look-and-say. They take turns making sequences by reading aloud the

@@ -1,4 +1,4 @@
-package seventh
+package Day7
 
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -37,7 +37,7 @@ import kotlin.text.Regex
  */
 class December7 {
     fun main() {
-        val lines = loadFile("src/seventh/7.dec_input.txt")
+        val lines = loadFile("src/Day7/7.dec_input.txt")
         for (line in lines) {
             val (input, label) = line.split(" -> ")
             if (line.contains(Regex("AND|OR"))) {

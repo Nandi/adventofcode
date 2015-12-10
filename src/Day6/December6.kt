@@ -1,4 +1,4 @@
-package sixth
+package Day6
 
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -55,7 +55,7 @@ class December6 {
     var lightsV2 = Array(1000, { IntArray(1000) })
 
     fun main() {
-        val lines = loadFile("src/sixth/6.dec_input.txt")
+        val lines = loadFile("src/Day6/6.dec_input.txt")
         for (line in lines) {
             val state = determineState(line)
             val parts = line.substringAfter(state.string + " ").split(" ");

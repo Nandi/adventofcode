@@ -1,4 +1,4 @@
-package forth
+package Day4
 
 import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils

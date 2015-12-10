@@ -1,4 +1,4 @@
-package second
+package Day2
 
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -37,7 +37,7 @@ class December2 {
         var square = 0;
         var ribbon = 0;
 
-        val lines = loadFile("src/second/2.dec_input.txt");
+        val lines = loadFile("src/Day2/2.dec_input.txt");
         for (line in lines) {
             val dim = line.split("x");
             square += packaging(dim[0].toInt(), dim[1].toInt(), dim[2].toInt());

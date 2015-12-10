@@ -1,4 +1,4 @@
-package first
+package Day1
 
 /**
  * todo: visualize
@@ -21,7 +21,7 @@ package first
  * Part 2
  *
  * Now, given the same instructions, find the position of the first character that causes him to enter the basement
- * (floor -1). The first character in the instructions has position 1, the second character has position 2, and so on.
+ * (floor -1). The first character in the instructions has position 1, the Day2 character has position 2, and so on.
  *
  * Created by Simon on 01/12/2015.
  */

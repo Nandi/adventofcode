@@ -1,4 +1,4 @@
-package seventh
+package Day7
 
 import java.util.*
 

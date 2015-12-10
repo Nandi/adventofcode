@@ -1,4 +1,4 @@
-package third
+package Day3
 
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -34,7 +34,7 @@ import java.util.*
  * Created by Simon on 03/12/2015.
  */
 class December3 {
-    val directions = loadFile("src/third/3.dec_input.txt");
+    val directions = loadFile("src/Day3/3.dec_input.txt");
 
     data class Position(val x: Int, val y: Int)
 
