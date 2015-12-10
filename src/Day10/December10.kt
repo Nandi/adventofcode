@@ -27,34 +27,33 @@ class December10 {
         var output = input
         for (i in 1..repeats) {
             output = lookAndSay(output)
-            println("$i - ${output.length}")
         }
 
-        println(output.length)
+        println("Length after $repeats iterations: ${output.length}")
     }
 
     fun lookAndSay(numberSequence: String): String {
         var last: Char = numberSequence[0]
         var count = 0
-        var output = ""
+        var output: StringBuffer = StringBuffer()
         for (c in numberSequence) {
             if (last.equals(c)) {
                 count++
             } else {
-                output += "$count$last"
+                output.append("$count$last")
                 count = 1
             }
 
             last = c
         }
 
-        output += "$count$last"
+        output.append("$count$last")
 
-        return output;
+        return output.toString();
     }
 }
 
 fun main(args: Array<String>) {
-    //December10().calculateOutputLength(40)
+    December10().calculateOutputLength(40)
     December10().calculateOutputLength(50)
 }
