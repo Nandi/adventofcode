@@ -1,6 +1,6 @@
 package Day9
 
-import com.google.common.collect.Collections2
+import org.jgrapht.experimental.permutation.CollectionPermutationIter
 import org.jgrapht.graph.DefaultWeightedEdge
 import org.jgrapht.graph.SimpleWeightedGraph
 import java.nio.file.Files
@@ -50,7 +50,11 @@ class December9 {
         var minPath = listOf<String>()
         var max = 0.0
         var maxPath = listOf<String>()
-        for (permutation in Collections2.permutations(cityGraph.vertexSet())) {
+
+        val itertator = CollectionPermutationIter<String>(cityGraph.vertexSet())
+
+        while (itertator.hasNext()) {
+            val permutation = itertator.nextArray
             var len = 0.0
 
             for (i in 0..(permutation.size - 2)) {
